@@ -449,8 +449,8 @@
           );
         var prevPhysicalCount = this._physicalCount;
         var delta = nextPhysicalCount - prevPhysicalCount;
-
-        if (delta <= 0) {
+        
+        if (!delta || delta <= 0) {
           return;
         }
 
